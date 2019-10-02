@@ -78,7 +78,7 @@ header{ /*header*/
     border: 5px solid black;
     display: flex;
     justify-content: space-around;
-    background-image: url(/Images/Green.jpg);
+    background-image: url(../Images/Green.jpg);
     border-left-style: none;
     border-right-style: none;
     
@@ -100,17 +100,14 @@ header{ /*header*/
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-
-
 #seccion0{ /*parallax image 1*/
-    background-image: url(/Images/parallax.png);
+    background-image: url(../Images/parallax.png);
 }
 #seccion1{ /*parallax image 2*/
-    background-image: url(/Images/parallax1.jpg);
+    background-image: url(../Images/parallax1.jpg);
 }
 #seccion2{ /*parallax image 3, seccion has height otherwise it's small*/
-    background-image: url(/Images/parallax2.jpeg);
+    background-image: url(../Images/parallax2.jpeg);
     height: 1000px;
 }
 .content{ /*content section for the main text (image 2)*/
@@ -120,7 +117,7 @@ header{ /*header*/
 }
 
 .events{
-    background-image: url(/Images/redbackgorund.jpg); /*class for the h2 (about NYSL, contact, game info...*/
+    background-image: url(../Images/redbackgorund.jpg); /*class for the h2 (about NYSL, contact, game info...*/
     height: 100px;
     text-align: center;
     font-size: 80px;
@@ -242,19 +239,19 @@ li a.home, .contact, .about, .policies, .game_info, .registration{ /*background 
     text-align: center;
     position: relative;
     top: 25%;
-    background-color: rgba(223, 105, 105, 0.3);
 }
 .rulestext{ /*section for the text*/
     margin-left: 40px;
     margin-right: 40px;
-    background-color:rgb(188, 188, 238);
+    background-color:rgb(228, 204, 204, 0.5);
 }
 .contenido1{ /*background content for the text*/
    
     text-align: justify;
     font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
     font-size: 20px;
-    margin: 0 40px 10px;
+    padding: 40px;
+    
 }
 th,td{
     padding:10px 15px;
@@ -305,7 +302,6 @@ caption{
     margin-top: 20px;
     padding-top: 20px;
     font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
-    background-color: rgb(200, 219, 240);
 }
 
 /*REGISTRATION*/
@@ -337,18 +333,18 @@ caption{
     border-top:none;
 }
 .register5{
-    background-image:url(/Images/redbackgorund.jpg);
+    background-color:rgb(228, 204, 204, 0.7);
 }
 .random{ /*background for the different registers*/
     border: 2px solid black;
     margin: 20px;
     padding: 15px;  
+    background-color:rgb(228, 204, 204, 0.7);
 }
 fieldset{
     border: 0;
     font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
     font-size: 20px;
-    text-shadow: 2px 2px 4px white;
 }
 .firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow, .seventhrow{
     display: flex;
