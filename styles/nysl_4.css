@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+}
+
+.slidershow{ /*slider*/
+    width: 1100px;
+    height: 500px;
+    overflow: hidden;
+    border: 5px solid black;
+
+}
+.slidershow-box { /*slider*/
+    padding: 45px 0;
+    width: 1110px;
+}
+.middle{ /*slider*/
+    margin: auto;
+}
+.navigation{ /*slider*/
+    position: absolute;
+    bottom: 245px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.bar{ /*slider*/
+    width: 50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.bar:hover{ /*slider*/
+    background: white;
+}
+input[name="r"]{ /*slider*/
+    position: absolute;
+    visibility: hidden;
+}
+.slides{ /*slider*/
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slide{ /*slider*/
+    width: 20%;
+    transition: 0.6s;
+}
+.slide img{ /*slider*/
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{ /*slider*/
+    margin-left: 0;
+} 
+#r2:checked ~ .s1{ /*slider*/
+    margin-left: -20%;
+}
+#r3:checked ~ .s1{ /*slider*/
+    margin-left: -40%;
+}
+#r4:checked ~ .s1{ /*slider*/
+    margin-left: -60%;
+}
+#r5:checked ~ .s1{ /*slider*/
+    margin-left: -80%;
+}
+.logo{ /*logo*/
+    width: 80px;
+    bottom: 83%;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+}
+header{ /*header*/
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(/Images/Green.jpg);
+    border-left-style: none;
+    border-right-style: none;
+    
+}
+.title{ /*title header*/
+    font-family:'raleway', cursive, Arial, Helvetica, sans-serif;
+    letter-spacing: 9px;
+    word-spacing: 9px;
+    margin-left: 21.5%;
+    font-size: 70px;
+    text-shadow: 1px 1px 8px black;
+}
+
+/*PARALLAX*/
+
+.parallax{ /*parallax*/
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+#seccion0{ /*parallax image 1*/
+    background-image: url(/Images/parallax.png);
+}
+#seccion1{ /*parallax image 2*/
+    background-image: url(/Images/parallax1.jpg);
+}
+#seccion2{ /*parallax image 3, seccion has height otherwise it's small*/
+    background-image: url(/Images/parallax2.jpeg);
+    height: 1000px;
+}
+.content{ /*content section for the main text (image 2)*/
+    width: 80%;
+    margin: auto;
+    padding: 150px 0;
+}
+
+.events{
+    background-image: url(/Images/redbackgorund.jpg); /*class for the h2 (about NYSL, contact, game info...*/
+    height: 100px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    letter-spacing: 9px;
+    word-spacing: 9px;
+    border: 2px solid black;
+    border-left-style: none;
+    border-right-style: none;
+    margin:0;
+}
+.calendar{ /*class for schedule*/
+    text-align: center;
+    font-size: 40px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 50px white;
+}
+.mission{ /*class for mission and vision*/
+    font-size: 60px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    bottom: 150px;
+    text-decoration: underline black;
+    display: inline-block;
+}
+.paragraph{ /*paragraph for mission and vision*/
+    font-size: 40px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    bottom: 150px;
+    text-shadow: 1px 1px 50px white;  
+    text-align: center;
+}
+
+/*NAVBAR AND DROPDOWN*/
+
+.dropbtn{ /*dropdown menu button*/
+    background-color: brown;
+    color: black;
+    padding: 16px;
+    font-size: 80px;
+    display: inline-block;
+    border: 2px solid black;
+    width: 400px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.dropdown{ /*dropdown menu*/
+    position: relative;
+    text-align:center;
+    top: 100px;
+    font-size: 80px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    display:initial;
+    margin-left: 40%;
+}
+.dropdown-content{ /*content for the dropdown*/
+    display: none;
+    position: absolute;
+    background-color: brown;  
+    width: 400px;
+    text-align: center;
+    left: 0%;
+}
+.dropdown-content ul{ /*content for the dropdown*/
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown-content a:hover{ /*hover for the dropdown*/
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content { /*block for the hover and dropdown*/
+    display: block;
+}
+.dropdown:hover .dropbtn{ /*hover for the dropdown*/
+    background-color:rgb(224, 178, 178);
+}
+.ul-index{ /*links nd stuff for the dropdown*/
+    list-style-type: none;
+    text-decoration: none;
+    border: 2px solid black;
+    margin: 0;
+    padding: 0;
+}
+.topbar{ /*navigatiion bar for the top,the same as ul-index*/
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+}
+li .navbar{ 
+    float: left;
+    padding: 5px 75px;
+}
+.navbar{ /*navigation bar for the top*/
+    font-size: 20px;
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color:rgb(168, 90, 90);
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+}
+.navbar:hover{
+    background-color: white;
+}
+li a{ 
+    font-size: 40px;
+    border: 2px solid black;
+    display: block;
+    margin: 30px;
+    background-color: rgb(188, 188, 238);
+}
+li a.home, .contact, .about, .policies, .game_info, .registration{ /*background color to know which page are you in, only works for the dropdown*/
+    background-color: #4CAF50;
+    color: rgb(188, 188, 238);
+}
+
+/*RULES*/
+
+.text{
+    text-align: center;
+    position: relative;
+    top: 25%;
+    background-color: rgba(223, 105, 105, 0.3);
+}
+.rulestext{ /*section for the text*/
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color:rgb(188, 188, 238);
+}
+.contenido1{ /*background content for the text*/
+   
+    text-align: justify;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+    margin: 0 40px 10px;
+}
+th,td{
+    padding:10px 15px;
+}
+th{
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+td{
+    text-align: justify;
+}
+caption{
+    border: 2px solid black;
+    background-color: brown;
+    border-top: none;
+}
+.tableone{
+    display:flex;
+    justify-content: space-around;
+    border: 5px solid black;
+    border-radius: 40px;
+    background-color: rgb(228, 204, 204, 0.5);
+
+}
+.tabletwo{
+    display:flex;
+    margin-top: 50px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.table1, .table2, .table3, .table4{
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+.table3{
+    text-align: center;
+    width: 60%;
+}
+.table4{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(228, 204, 204, 0.5);
+}
+.fifarules{ /*rules*/
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 219, 240);
+}
+
+/*REGISTRATION*/
+
+/*backgroundcolor for maps*/
+.walton{
+    background-color: rgb(255, 82, 82)
+}
+.orleans{
+    background-color: rgb(129,119,23)
+}
+.southport{
+    background-color: rgb(245, 124, 0)
+}
+.orchard{
+    background-color: rgb(156, 39, 176)
+}
+.ogden{
+    background-color: rgb(103, 58, 183)
+}
+.fremont{
+    background-color: rgb(136, 14, 79)
+}
+.register1 { /*this class is different because it's the 1st one*/
+    border: 5px solid black;
+}
+.register2, .register3, .register4, .register5{
+    border: 5px solid black;
+    border-top:none;
+}
+.register5{
+    background-image:url(/Images/redbackgorund.jpg);
+}
+.random{ /*background for the different registers*/
+    border: 2px solid black;
+    margin: 20px;
+    padding: 15px;  
+}
+fieldset{
+    border: 0;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+    font-size: 20px;
+    text-shadow: 2px 2px 4px white;
+}
+.firstrow, .secondrow, .thirdrow, .fourthrow, .fifthrow, .seventhrow{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.first_name{
+    display: flex;
+    flex-grow: 1;
+}
+.first_name input{
+    flex-grow: 1;
+}
+.second_name{
+    display: flex;
+    flex-grow: 1;
+}
+.second_name input{
+    flex-grow:1;
+}
+.street_address{
+    margin-top: 20px;
+    display: flex;
+}
+.street_address input{
+    flex-grow: 1;
+}
+.city, .zip, .parent, .phone, .contactmail, .guardian, .date2{
+    display: flex;
+    flex-grow: 1;
+}
+.city input{
+    flex-grow: 1;
+}
+.zip input{
+    flex-grow: 1;
+}
+.parent input{
+    flex-grow: 1;
+}
+.phone input{
+    flex-grow: 1;
+}
+.contactmail input{
+    flex-grow: 1;
+}
+.birthdate, .gender{
+    display: flex;
+    align-items: center;
+}
+.gender input{
+    margin-left: 20px;
+}
+.guardian input{
+    flex-grow: 1;
+}
+.date2 {
+    align-items: center;
+}
+.grade{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.jerseysize, .shortsize{
+    display: flex;
+}
+.radio1, .radio2, .radio3, .radio4{
+    display: flex;
+    flex-direction: column;
+}
+.js1{
+    padding: 10px;
+    margin: 3px;
+}
+
+.toplay{
+    text-align: center;
+    font-size: 30px;
+}
+
+.permission{
+    text-align: justify;
+    margin: 30px 0;
+    font-size: 25px;
+}
+input[type="text"],[type="tel"],[type="date"],[type="Grade"], [type="email"] {
+    margin: 0 30px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+input[type="checkbox"]{
+    height: 25px;
+    width:25px;
+    margin: 20px 15px;
+}
+input[type="radio"]{
+    height: 20px;
+    width:20px;
+    margin-right: 20px;
+    
+}
+option, select {
+    margin: 0 30px;
+    border: 2px solid black;
+    font-size: 20px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+}
+.submit{
+    margin: 10px;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+    font-size: 40px;
+    cursor: pointer;
+    background-color: rgb(228, 133, 223);
+    border: 2px solid black;
+    border-radius: 5px;
+    float: right;
+}
+
+.submit:hover{
+    background:rgb(12, 175, 12);
+}
+.map{
+    width:550px;
+    border:2px solid black;
+}
+.feedback{
+    text-align: center;
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+    font-size: 30px;
+}
+.tablefeedback{
+    font-family: 'raleway', cursive, Arial, Helvetica, sans-serif; 
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 30px; 
+}

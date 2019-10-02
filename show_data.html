@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+  </style>
+  <link rel="stylesheet" href="./styles/nysl_4.css">
+  <meta charset="utf-8">
+<title>Thank you!</title>
+</head>
+<body>
+<header>
+    <h1 class="title">Northside Youth Soccer League</h1>
+    <a href="/index2.html"> <img class= "logo" src="/Images/nysl_logo.png" alt="nysl logo"> </a>
+</header>
+  <div class="parallax">
+    <ul class="topbar">
+        <li><a class="navbar" href="index2.html">Home</a></li>
+        <li><a class="navbar" href="#">About NYSL</a></li>
+        <li><a class="navbar" href="contact2.html">Contact</a></li>
+        <li><a class="navbar" href="rules2.html">Rules & Policies</a></li>
+        <li><a class="navbar" href="game_info2.html">Game Info</a></li>
+        <li><a class="navbar" href="registration.html">Registration</a></li>
+    </ul>
+    <section class="parallax"   id="seccion0">
+        <div class="slidershow-box middle">
+          <div class="slidershow">
+      
+              <div class="slides">
+                  <input type="radio" name="r" id="r1" checked>
+                  <input type="radio" name="r" id="r2">
+                  <input type="radio" name="r" id="r3">
+                  <input type="radio" name="r" id="r4">
+                  <input type="radio" name="r" id="r5">
+
+                  <div class="slide s1">
+                    <img src="/Images/niña1.jpg" alt=""> 
+                  </div>
+      
+                  <div class="slide">
+                      <img src="/Images/niño1.jpg" alt=""> 
+                  </div>
+      
+                  <div class="slide">
+                      <img src="/Images/niños.jpg" alt=""> 
+                  </div>
+      
+                  <div class="slide">
+                      <img src="/Images/niños2.jpg" alt=""> 
+                  </div>
+      
+                  <div class="slide">
+                      <img src="/Images/niños3.jpg" alt=""> 
+                  </div>
+              </div>
+      
+              <div class="navigation">
+                  <label for="r1" class="bar"></label>
+                  <label for="r2" class="bar"></label>
+                  <label for="r3" class="bar"></label>
+                  <label for="r4" class="bar"></label>
+                  <label for="r5" class="bar"></label>
+              </div>
+          </div> 
+        </div>
+    </section>
+    <h2 class="events">Thanks for your feedback!</h2>
+    <section class="parallax"   id="seccion1"> 
+      <div class="content">
+        <div class="feedback">
+          <p>&nbsp;</p>
+          <h1>The following information has been sent as your
+              feedback:</h1>
+            </div>
+        
+          <table class="tablefeedback">
+            <tr>
+              <th>Form Field</th>
+              <th>Field Value</th>
+            </tr>
+
+          <script>
+          var args = location.search.substr(1).split('&');
+          for (var i = 0; i < args.length; ++i) {
+            var parts = args[i].split('=');
+            if (parts != null) {
+              var field = parts[0];
+              var value = parts[1];
+              if (value == null) {
+                value = "null"
+              }
+              else {
+                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+              }
+
+              document.writeln('<tr><td align="center">' + field + '</td>');
+              document.writeln('<td align="center">' + value + '</td></tr>');
+            }
+          }
+          </script>
+          </table>
+      </div>
+    </section>
+    <section class="parallax"   id="seccion2"> 
+      <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+                <nav>  
+                    <ul class="ul-index">
+                        <li><a href="index2.html">Home</a></li>
+                        <li><a href="about2.html">About NYSL</a></li>
+                        <li><a href="contact2.html">Contact</a></li>
+                        <li><a href="rules2.html">Rules & Policies</a></li>
+                        <li><a href="game_info2.html">Game Info</a></li>
+                        <li><a href="registration.html">Registration</a></li>
+                    </ul>
+                </nav>
+          </div>
+      </div>
+    </section>
+  </div> 
+</body>
+</html>
